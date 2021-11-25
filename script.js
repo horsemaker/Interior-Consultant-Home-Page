@@ -27,5 +27,7 @@ window.addEventListener('resize', () => {
     menu.style.visibility = 'visible'
   } else {
     menu.style.visibility = 'hidden'
+    openMenu.style.display = 'block'
+    closeMenu.style.display = 'none'
   }
 })
