@@ -5,34 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interior Consultant</title>
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="page">
-      <div class="page__navbar">
-        <div class="page__logo"></div>
-        <div class="page__navlinks"></div>
-      </div>
+      <nav class="page__navbar">
+        <div class="page__logo">
+          <h4>This Interior</h4>
+        </div>
+        <ul class="page__navlinks">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Collection</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
       <div class="page__main">
         <div class="page__details">
-          <div class="page__heading"></div>
-          <div class="page__desc"></div>
-          <div class="page__read-more"></div>
+          <h1 class="page__heading">Modern interior</h1>
+          <p class="page__desc">
+            A full-Service residential & commercial interior design and staging
+            company offering professional organizing & eco-services.
+          </p>
+          <div class="page__read-more">
+            <p>Read More</p>
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </div>
         </div>
         <div class="page__design">
-          <div class="page_image"></div>
+          <img class="page__image" src="./assets/photo1.png"></img>
           <div class="page__credits">
             <div class="credits__profile">
-              <div class="credits__avatar"></div>
+              <img class="credits__avatar" src="./assets/photo2.png"></img>
               <div class="credits__person-info">
-                <div class="credits__name"></div>
-                <div class="credits__job"></div>
+                <p class="credits__name">Aliza Webber</p>
+                <p class="credits__job">Interior designer</p>
               </div>
             </div>
-            <div class="credits__desc"></div>
+            <p class="credits__desc">Designed in 2020 by Aliza Webber</p>
           </div>
         </div>
       </div>
-      <div class="page__footer"></div>
+      <footer class="page__footer">
+        created by <a href="#">horsemaker</a> - devChallenges.io
+      </footer>
     </div>
   </body>
 </html>
