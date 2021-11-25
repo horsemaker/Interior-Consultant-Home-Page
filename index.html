@@ -10,6 +10,7 @@
       href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" async></script>
   </head>
   <body>
     <div class="page">
@@ -17,7 +18,11 @@
         <div class="page__logo">
           <h4>This Interior</h4>
         </div>
-        <ul class="page__navlinks">
+        <button class="page__menu">
+          <i class="fas fa-bars open-menu" id="open-menu"></i>
+          <i class="fas fa-times close-menu" id="close-menu"></i>
+        </button>
+        <ul class="page__navlinks menu-layout">
           <li class="link-active"><a href="#">Home</a></li>
           <li><a href="#">Collection</a></li>
           <li><a href="#">About</a></li>

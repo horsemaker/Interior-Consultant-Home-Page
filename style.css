@@ -47,6 +47,10 @@ body {
   cursor: pointer;
 }
 
+.page__menu {
+  display: none;
+}
+
 .page__navlinks {
   display: flex;
   justify-content: space-between;
@@ -226,8 +230,41 @@ body {
     gap: 5vh 0;
   }
 
-  .page__navlinks {
+  .page__menu {
+    display: block;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    font-size: 24px;
+    padding-right: 4px;
+    border: none;
+  }
+
+  .open-menu {
+    display: block;
+  }
+
+  .close-menu {
     display: none;
+  }
+
+  .page__navlinks {
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 7vh;
+    height: 93vh;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 2vh 0;
+    transition: transform 0.5s ease-in;
+  }
+
+  .page__navlinks li {
+    height: 3vh;
   }
 
   .page__main {
