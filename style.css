@@ -221,7 +221,7 @@ body {
 
 @media screen and (max-width: 480px) {
   .page {
-    margin-top: 2.5vh;
+    margin-top: 2.4vh;
     width: 93.6vw;
     gap: 5vh 0;
   }
