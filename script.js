@@ -25,5 +25,13 @@ window.addEventListener('resize', () => {
   // console.log(window.innerWidth)
   if (window.innerWidth > 480) {
     menu.style.visibility = 'visible'
+  } else {
+    if (menu.style.visibility === 'visible') {
+      openMenu.style.display = 'none'
+      closeMenu.style.display = 'block'
+    } else {
+      openMenu.style.display = 'block'
+      closeMenu.style.display = 'none'
+    }
   }
 })
