@@ -12,6 +12,72 @@
   box-sizing: border-box;
 }
 
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.page__navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.page__navlinks {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  list-style: none;
+}
+
+.page__main {
+  display: flex;
+}
+
+.page__details {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.page__read-more {
+  display: flex;
+}
+
+.page__design {
+  display: flex;
+  flex-direction: column;
+}
+
+.page__image {
+  height: 50vh;
+}
+
+.page__credits {
+  /* margin-top: -5vh; */
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+
+.credits__profile {
+  display: flex;
+  align-items: center;
+}
+
+.credits__avatar {
+  height: 10vh;
+}
+
+.credits__person-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.page__footer {
+  text-align: center;
+}
+
 /*
 font-family: 'Crimson Pro', serif;
 font-family: 'Lora', serif;
