@@ -63,8 +63,11 @@ body {
 }
 
 .link-active {
-  font-weight: bold;
   border-bottom: 2px solid var(--secondary-color);
+}
+
+.link-active a {
+  font-weight: bold;
 }
 
 .page__navlinks li a {
