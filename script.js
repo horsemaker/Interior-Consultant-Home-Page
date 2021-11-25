@@ -20,3 +20,10 @@ function menuAction(event) {
 }
 
 menuBtn.addEventListener('click', menuAction)
+window.addEventListener('resize', () => {
+  // console.log("resized!")
+  // console.log(window.innerWidth)
+  if (window.innerWidth > 480) {
+    menu.style.visibility = 'visible'
+  }
+})
