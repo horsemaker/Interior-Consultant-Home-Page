@@ -53,11 +53,11 @@ body {
 }
 
 .page__navlinks {
+  visibility: visible;
   display: flex;
   justify-content: space-between;
   width: 40%;
   list-style: none;
-  visibility: visible;
 }
 
 .page__navlinks li {
