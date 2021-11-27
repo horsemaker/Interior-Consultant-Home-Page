@@ -237,10 +237,14 @@ body {
     cursor: pointer;
     color: var(--secondary-color);
     background-color: transparent;
-    font-size: 24px;
-    padding-right: 4px;
+    /* font-size: 24px; */
+    /* padding-right: 4px; */
     border: none;
     z-index: 2;
+  }
+
+  .page__menu img {
+    height: 4vh;
   }
 
   .page__menu:focus {
