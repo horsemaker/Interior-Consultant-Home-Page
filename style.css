@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap');
+
+:root {
+  --primary-color: #181719;
+  --secondary-color: #ffffff;
+  --tertiary-color: #828282;
+  --quaternary-color: #a9a9a9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.page {
+  margin-top: 4vh;
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 15vh 0;
+  z-index: 0;
+  /* align-items: center; */
+}
+
+.page__navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 5vh; */
+}
+
+.page__logo {
+  font-family: 'Crimson Pro', serif;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  border: 1px solid var(--secondary-color);
+  padding: 8px;
+  cursor: pointer;
+}
+
+.page__menu {
+  display: none;
+}
+
+.page__navlinks {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  list-style: none;
+}
+
+.page__navlinks li {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  height: 4vh;
+}
+
+.link-active {
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.link-active a {
+  font-weight: bold;
+}
+
+.page__navlinks li a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.page__main {
+  /* align-self: center; */
+  /* height: 120vh; */
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  gap: 0 2vw;
+}
+
+.page__details {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 6vh 0;
+  /* width: 25vw; */
+}
+
+.page__heading {
+  font-family: 'Lora', serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 61px;
+}
+
+.page__desc {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  width: 25vw;
+}
+
+.page__read-more {
+  display: flex;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  gap: 0 1vw;
+  cursor: pointer;
+}
+
+.page__read-more i {
+  align-self: flex-end;
+}
+
+.page__design {
+  display: flex;
+  flex-direction: column;
+}
+
+.page__image {
+  /* height: 75vh; */
+  width: 48.7vw;
+}
+
+.page__credits {
+  background-color: var(--primary-color);
+  margin-top: -10vh;
+  margin-right: 2vw;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  /* height: 17.5vh; */
+  justify-content: space-around;
+  padding-top: 2vh;
+  padding-right: 8vw;
+  padding-bottom: 5vh;
+  padding-left: 2vw;
+  gap: 2vh;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.credits__profile {
+  display: flex;
+  align-items: center;
+  gap: 0 1vw;
+}
+
+.credits__avatar {
+  height: 6.75vh;
+  border-radius: 100rem;
+}
+
+.credits__person-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+}
+
+.credits__name {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.credits__job {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--tertiary-color);
+}
+
+.credits__desc {
+  font-family: 'Lora', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+  width: 16vw;
+}
+
+.page__footer {
+  /* text-align: center; */
+  align-self: center;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--quaternary-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  height: 5vh;
+}
+
+.page__footer a {
+  /* text-decoration: none; */
+  color: var(--quaternary-color);
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1024px) {
+  .page__navlinks {
+    width: 50%;
+  }
+
+  .page__desc {
+    width: 35vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .page {
+    margin-top: 2.4vh;
+    width: 93.6vw;
+    gap: 5vh 0;
+  }
+
+  .page__menu {
+    display: block;
+    cursor: pointer;
+    color: var(--secondary-color);
+    background-color: transparent;
+    font-size: 24px;
+    padding-right: 4px;
+    border: none;
+    z-index: 2;
+  }
+
+  .page__menu:focus {
+    outline: none;
+  }
+
+  .open-menu {
+    display: block;
+  }
+
+  .close-menu {
+    display: none;
+  }
+
+  .page__navlinks {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4vh 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .page__navlinks.show {
+    display: flex;
+  }
+
+  .page__navlinks li {
+    height: 3vh;
+  }
+
+  .page__main {
+    flex-direction: column;
+    width: 100%;
+    gap: 4vh 0;
+  }
+
+  .page__details {
+    align-self: stretch;
+    gap: 4vh 0;
+  }
+
+  .page__heading {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  .page__desc {
+    font-size: 14px;
+    line-height: 17px;
+    width: 60vw;
+  }
+
+  .page__read-more {
+    font-size: 14px;
+    line-height: 17px;
+    gap: 0 4vw;
+  }
+
+  .page__read-more i {
+    align-self: flex-end;
+  }
+
+  .page__image {
+    width: 100%;
+  }
+
+  .page__credits {
+    /* display: none; */
+    width: 80vw;
+    margin-top: -6vh;
+    margin-right: 2.8vw;
+    padding-left: 5vw;
+    padding-bottom: 3vh;
+  }
+
+  .credits__profile {
+    gap: 0 2vw;
+  }
+
+  .credits__name {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .credits__avatar {
+    height: 5vh;
+  }
+
+  .credits__person-info {
+    gap: 0.6vh 0;
+  }
+
+  .credits__job {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .credits__desc {
+    font-size: 18px;
+    line-height: 23px;
+    width: 50vw;
+  }
+
+  /* .page__footer {
+    position: absolute;
+    bottom: 0;
+  } */
+
+  .page__footer {
+    margin-top: 4vh;
+  }
+}
