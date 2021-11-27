@@ -32,6 +32,7 @@ body {
 
 .page__navbar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   /* height: 5vh; */
@@ -53,7 +54,6 @@ body {
 }
 
 .page__navlinks {
-  visibility: visible;
   display: flex;
   justify-content: space-between;
   width: 40%;
@@ -226,6 +226,11 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+
+  .body-height {
+    height: 100vh;
+  }
+
   .page {
     margin-top: 2.4vh;
     width: 93.6vw;
@@ -234,12 +239,17 @@ body {
 
   .page__menu {
     display: block;
+    cursor: pointer;
     color: var(--secondary-color);
-    background-color: var(--primary-color);
+    background-color: transparent;
     font-size: 24px;
     padding-right: 4px;
     border: none;
     z-index: 2;
+  }
+
+  .page__menu:focus {
+    outline: none;
   }
 
   .open-menu {
@@ -251,20 +261,23 @@ body {
   }
 
   .page__navlinks {
-    visibility: hidden;
+    display: none;
     position: absolute;
-    left: 0;
     top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
     background-color: var(--primary-color);
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
     gap: 4vh 0;
-    transition: transform 0.5s ease-in;
+    width: 100%;
     z-index: 1;
+  }
+
+  .page__navlinks.show {
+    display: flex;
   }
 
   .page__navlinks li {
