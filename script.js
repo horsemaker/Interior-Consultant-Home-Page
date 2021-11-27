@@ -24,21 +24,21 @@ menuBtn.addEventListener('click', menuAction)
 // var previousWindowSize = undefined
 // var currentWindowSize = window.innerWidth
 
-window.addEventListener('resize', () => {
+// window.addEventListener('resize', () => {
   // console.log("resized!")
   // console.log(window.innerWidth)
 
-  if (window.innerWidth > 480) {
-    menu.style.visibility = 'visible'
-  } else {
-    // if (menu.style.visibility === 'visible') {
-    //   return
-    // }
-    menu.style.visibility = 'hidden'
-    openMenu.style.display = 'block'
-    closeMenu.style.display = 'none'
-  }
-  // console.log("Previous Window Size", previousWindowSize)
+  // if (window.innerWidth > 480) {
+  //   menu.style.visibility = 'visible'
+  // } else {
+  //   // if (menu.style.visibility === 'visible') {
+  //   //   return
+  //   // }
+  //   menu.style.visibility = 'hidden'
+  //   openMenu.style.display = 'block'
+  //   closeMenu.style.display = 'none'
+  // }
+  // // console.log("Previous Window Size", previousWindowSize)
   // console.log("Current Window Size", currentWindowSize)
 
   // if (previousWindowSize === undefined) {
@@ -69,4 +69,4 @@ window.addEventListener('resize', () => {
   // }
 
   // previousWindowSize = currentWindowSize
-})
+// })
