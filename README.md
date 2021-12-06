@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">Interior Consultant Home Page</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -62,4 +62,4 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 - Website - [ghodekaryash.netlify.app](https://ghodekaryash.netlify.app/)
 - GitHub - [horsemaker](https://github.com/horsemaker)
-- Twitter [horsemaker_](https://twitter.com/horsemaker_)
+- Twitter [horsemaker\_](https://twitter.com/horsemaker_)
